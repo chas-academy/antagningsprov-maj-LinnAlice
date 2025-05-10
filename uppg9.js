@@ -11,11 +11,11 @@ function uppg9 (){
         for (let i = 0; i < siffror.length; i++) {
             // Kolla ifall talet är jämt, annars udda
             if (siffror[i] % 2 == 0) {
-                console.log(siffror[i])
-                console.log("Jämt")
+                console.log(siffror[i]);
+                console.log("jämt");
             } else {
-                console.log(siffror[i])
-                console.log("Udda")
+                console.log(siffror[i]);
+                console.log("udda");
             }
         }
     };
@@ -24,6 +24,5 @@ function uppg9 (){
     sort(siffror);
   
 }
-uppg9();
 
 module.exports = { uppg9 };
