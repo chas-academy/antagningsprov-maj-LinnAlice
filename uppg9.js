@@ -7,14 +7,19 @@ function uppg9 (){
     // anropa funktionen och skicka med en array som argument
 
     function sort(arr) {
+        const resultat = [];
 
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] % 2 === 0) {
                 console.log(arr[i] + "jämt");
+                resultat.push([arr[i], "jämt"])
             } else {
                 console.log(arr[i] + "udda");
+                resultat.push([arr[i], "udda"])
+
             }
         }
+        return resultat
     };
 
     const siffror = [5,20,13,72,3,1,92,66,73];
