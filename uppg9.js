@@ -10,15 +10,15 @@ function uppg9 (){
 
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] % 2 === 0) {
-                console.log([arr[i], "jämt"]);
+                console.log(arr[i] + "jämt");
             } else {
-                console.log([arr[i], "udda"]);
+                console.log(arr[i] + "udda");
             }
         }
     };
 
     const siffror = [5,20,13,72,3,1,92,66,73];
-    sort(siffror);
+    return sort(siffror);
   
 }
 uppg9();
