@@ -10,9 +10,9 @@ function uppg9 (){
 
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] % 2 === 0) {
-                console.log({"jämt":arr[i]});
+                console.log([arr[i], "jämt"]);
             } else {
-                console.log({"udda":arr[i]});
+                console.log([arr[i], "udda"]);
             }
         }
     };
