@@ -1,5 +1,3 @@
-
-
 function uppg8(){
 
 // skapa en array med fem person obkjet
@@ -11,7 +9,25 @@ function uppg8(){
 
 // anropa funktionen och skicka med arrayen som argument
 
+const personer = [
+    {name: "Linn", age: 26},
+    {name: "Alfred", age: 34},
+    {name: "Niklas", age: 30},
+    {name: "Calle", age: 42},
+    {name: "Henrik", age: 27},
+]
+
+function ageCheck (array) {
+    for (let i = 0; i < array.length; i++) {
+        // Kolla specifikt på age genom att skriva array[i].age
+        if (array[i].age > 30) console.log(array[i].name);
+    }
+}
+
+// Kör funktionen
+ageCheck(personer);
 
 }
 
+uppg8();
 module.exports = { uppg8 };
