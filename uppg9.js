@@ -6,15 +6,14 @@ function uppg9 (){
 
     // anropa funktionen och skicka med en array som argument
 
-    function sort(siffror) {
+    function sort(arr) {
 
-        for (let i = 0; i < siffror.length; i++) {
-            // Kolla ifall talet är jämt, annars udda
-            if (siffror[i] % 2 == 0) {
-                console.log(siffror[i]);
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 === 0) {
+                console.log(arr[i]);
                 console.log("jämt");
             } else {
-                console.log(siffror[i]);
+                console.log(arr[i]);
                 console.log("udda");
             }
         }
@@ -24,5 +23,6 @@ function uppg9 (){
     sort(siffror);
   
 }
+uppg9();
 
 module.exports = { uppg9 };
